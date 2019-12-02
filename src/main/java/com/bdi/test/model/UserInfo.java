@@ -6,7 +6,8 @@ import javax.persistence.Id;
 
 import lombok.Data;
 
-@Entity(name="user_info")
+// Create, Insert, Update, Delete
+@Entity(name="user_info") // table name
 @Data
 public class UserInfo {
 	
@@ -28,6 +29,7 @@ public class UserInfo {
 	}
 	@Id
 	@GeneratedValue
+	// column 이름을 줘도 됨
 	private Integer UI_NUM;
 	private String UI_NAME;
 	private String UI_ID;
