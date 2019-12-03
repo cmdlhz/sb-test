@@ -14,6 +14,8 @@ public class UserInfo {
 	public UserInfo() {
 		
 	}
+	
+	// Alt + C
 	public UserInfo(Integer uI_NUM, String uI_NAME, String uI_ID, String uI_PWD, String cREDAT, String cRETIM,
 			String mODDAT, String mODTIM, String aCTIVE) {
 		super();
