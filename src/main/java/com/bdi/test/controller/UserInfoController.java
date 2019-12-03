@@ -31,6 +31,9 @@ public class UserInfoController {
 		UserInfo ui = new UserInfo();
 		ui.setUI_NUM(ui_num);
 		Example<UserInfo> uiE = Example.of(ui);
+		if(!uis.findOne(uiE).isPresent()) {
+			return null;
+		}
 		return uis.findOne(uiE).get();
 	}
 	
